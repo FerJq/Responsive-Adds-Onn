@@ -1,3 +1,129 @@
+:root {
+  --primarycolor: rgb(196, 227, 255);
+  --primaryshadow: 5px 5px 10px rgb(77, 77, 77);
+}
+
 header {
-  background-image: url("/bg-img/bg.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+    url("../bg-img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  color: white;
+  text-align: center;
+  padding: 250px 0;
+}
+
+header h1 {
+  line-height: 200px;
+  font-size: 120px;
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+header h2 {
+  font-weight: 700;
+  font-size: 45px;
+  margin-top: -50px;
+  color: white;
+}
+
+header hr {
+  color: white;
+}
+
+hr {
+  color: black;
+  margin-top: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/bg-img/bgfooter.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+main {
+  padding: 2%;
+  background-color: var(--primarycolor);
+}
+
+main button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 10px;
+  width: 200px;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  background-color: rgb(46, 133, 255);
+  color: white;
+  border: rgb(46, 133, 255);
+}
+
+.container {
+  color: aliceblue;
+  max-width: 1500px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.main-container video {
+  box-shadow: var(--primaryshadow);
+}
+
+.descrip-container h1 {
+  color: black;
+  font-weight: 700;
+}
+
+.descrip-container p {
+  color: black;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+/* First Section */
+section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../bg-img/pexels-gustavo-fring-4148874.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 1500px;
+
+  color: white;
+  text-align: center;
+  padding: 300px 0;
+}
+
+/*Galery*/
+.galery {
+  background-color: grey;
+  padding: 10%;
+  max-width: 100%;
+}
+
+.img {
 }
