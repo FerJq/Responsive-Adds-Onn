@@ -203,7 +203,7 @@ iframe {
 /*Galery*/
 .galery {
   background-color: aliceblue;
-  padding: 10%;
+  padding: 6%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 100%;
@@ -329,7 +329,7 @@ footer a:hover {
 .dark {
   background: linear-gradient(
     114.3deg,
-    rgb(56, 76, 63) 0.2%,
+    rgb(35, 47, 39) 0.2%,
     rgb(26, 52, 37) 68.5%
   );
   background-position: left;
