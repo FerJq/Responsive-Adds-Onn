@@ -5,6 +5,22 @@
   --darkshadow: 5px 5px 10px rgb(0, 0, 0);
 }
 
+li button {
+  margin: 7px;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: rgb(46, 133, 255);
+  color: white;
+  border: rgb(46, 133, 255);
+  transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+li button:hover {
+  background-color: rgb(255, 237, 103);
+  color: black;
+}
+
 body {
   background: linear-gradient(-225deg, #5d9fff 0%, #b8dcff 48%, #6bbbff 100%);
   background-position: left;
@@ -207,8 +223,6 @@ iframe {
 }
 
 /*media section/ section - 3*/
-.section-body-3 {
-}
 
 .grid-section-3-1 {
   display: grid;
@@ -409,6 +423,22 @@ footer a:hover {
 .dark i:hover {
   color: black;
   background-color: rgb(255, 237, 103);
+}
+
+.dark li button {
+  margin: 7px;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: rgb(104, 214, 104);
+  color: black;
+  border: rgb(104, 214, 104);
+  transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.dark li button:hover {
+  background-color: rgb(255, 237, 103);
+  color: black;
 }
 
 @media (max-width: 700px) {
