@@ -1,6 +1,8 @@
 :root {
-  --primarycolor: rgb(196, 227, 255);
-  --primaryshadow: 5px 5px 10px rgb(77, 77, 77);
+  --primarycolor: rgb(46, 133, 255);
+  --secondcolor: rgb(255, 237, 103);
+  --primaryshadow: 5px 5px 10px rgb(30, 30, 30);
+  --darkshadow: 5px 5px 10px rgb(0, 0, 0);
 }
 
 body {
@@ -13,8 +15,6 @@ body {
 .color-theme {
   background-position: right;
 }
-
-
 
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
@@ -38,8 +38,21 @@ header h1 {
 header h2 {
   font-weight: 700;
   font-size: 45px;
-  margin-top: -50px;
+  margin-top: -25px;
   color: white;
+}
+
+header a {
+  margin: 0 auto;
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: 500;
+  color: white;
+  transition: all 200ms ease-in-out;
+}
+header a:hover {
+  transition: all 200ms ease-in-out;
+  color: rgb(255, 237, 103);
 }
 
 header hr {
@@ -73,8 +86,8 @@ footer {
 }
 
 main {
-  padding: 2%;
   background-color: aliceblue;
+  padding: 2%;
 }
 
 .container button {
@@ -99,6 +112,7 @@ main {
 }
 
 .container {
+  box-shadow: 0px 0px 15px #196eec;
   color: aliceblue;
   max-width: 1500px;
   margin: 0 auto;
@@ -176,7 +190,6 @@ section {
 
 .section-body-2 .embed-text {
   padding: 2%;
-  background-color: rgb(243, 243, 243);
   border-radius: 10px;
   text-align: center;
   color: black;
@@ -189,11 +202,12 @@ iframe {
 }
 /*Galery*/
 .galery {
-  padding: 4%;
+  background-color: aliceblue;
+  padding: 10%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: aliceblue;
   max-width: 100%;
+  grid-gap: 30px;
 }
 
 /*media section/ section - 3*/
@@ -219,8 +233,8 @@ iframe {
 }
 
 .text-column {
-  padding: 6%;
   background-color: aliceblue;
+  padding: 6%;
   color: black;
   font-size: 18px;
   line-height: 1.5;
@@ -230,9 +244,9 @@ iframe {
   grid-template-columns: 1fr 1fr;
 }
 .text-column-2 {
+  background-color: aliceblue;
   text-align: center;
   padding: 6%;
-  background-color: aliceblue;
   color: black;
   font-size: 18px;
 }
@@ -247,7 +261,30 @@ iframe {
 /*Contact */
 
 .contact {
-  color: blue;
+  text-align: center;
+  font-size: 25px;
+}
+
+.contact i {
+  background-color: aliceblue;
+  color: black;
+  padding: 10px;
+  margin: 10px 15px;
+  border-radius: 30px;
+}
+
+.contact i:hover {
+  transition: all 200ms ease-in-out;
+  background-color: var(--primarycolor);
+  color: white;
+}
+footer hr {
+  color: white;
+}
+.fjs-sign {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
 }
 
 /* Footer */
@@ -258,14 +295,21 @@ iframe {
   grid-gap: 30px;
 }
 
-.footer-container a {
+footer a {
   display: block;
   margin: 0 auto;
   text-decoration: none;
   line-height: 1.5;
   font-size: 20px;
   color: rgb(130, 197, 255);
+  transition: all 200ms ease-in-out;
 }
+
+footer a:hover {
+  transition: all 200ms ease-in-out;
+  color: rgb(255, 237, 103);
+}
+
 /*fast*/
 
 .image-fluid {
@@ -276,4 +320,110 @@ iframe {
 
 .box-perfect-shadow {
   box-shadow: var(--primaryshadow);
+}
+
+.box-perfect-shadow-dark {
+  box-shadow: var(--darkshadow);
+}
+
+.dark {
+  background: linear-gradient(
+    114.3deg,
+    rgb(56, 76, 63) 0.2%,
+    rgb(26, 52, 37) 68.5%
+  );
+  background-position: left;
+  transition: background-position 1s;
+}
+
+.dark header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+    url("../bg-img/background\ darktheme.jpg");
+}
+
+.dark hr {
+  color: white;
+}
+
+.dark .container {
+  box-shadow: 0px 0px 15px rgb(104, 214, 104);
+}
+.dark .container button {
+  background-color: rgb(104, 214, 104);
+  border: rgb(104, 214, 104);
+  color: black;
+}
+
+.dark .container button:hover {
+  background-color: rgb(255, 237, 103);
+  color: black;
+}
+
+.dark main {
+  background-color: #343a40;
+  color: white;
+}
+
+.dark .descrip-container h1 {
+  color: white;
+}
+
+.dark .descrip-container p {
+  color: white;
+}
+
+.dark .section-body-2 {
+  background-image: url("../bg-img/pawsblack.jpg");
+}
+.dark .section-body-2 .embed-text {
+  color: white;
+}
+
+.dark .galery {
+  background-color: #343a40;
+}
+
+.dark .text-column {
+  background-color: #343a40;
+  color: white;
+}
+
+.dark .text-column-2 {
+  background-color: #343a40;
+  color: white;
+}
+
+.dark .container a {
+  color: rgb(47, 255, 120);
+}
+
+.dark .container a:hover {
+  color: rgb(255, 237, 103);
+}
+
+@media (max-width: 700px) {
+  header h1 {
+    font-weight: 700;
+    font-size: 60px;
+  }
+
+  header h2 {
+    font-size: 25px;
+  }
+
+  .main-container {
+    display: block;
+  }
+
+  .section-container-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-body-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .galery {
+    display: none;
+  }
 }

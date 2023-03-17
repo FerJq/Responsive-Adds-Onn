@@ -1,18 +1,95 @@
 //background
 
-let bg = document.querySelector("body");
+let body = document.querySelector("body");
 
 function background_theme() {
-  if (bg.classList.contains("color-theme")) {
-    bg.classList.remove("color-theme");
+  if (body.classList.contains("color-theme")) {
+    body.classList.remove("color-theme");
   } else {
-    bg.classList.add("color-theme");
+    body.classList.add("color-theme");
   }
 }
 
-setInterval(background_theme, 3000);
+setInterval(background_theme, 2000);
 
-///
+//navbar dark theme
+let navbar_dark = document.querySelector(".navbar-container");
+let darknav = `<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#aboutme">FjS.</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#aboutme">About me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#bestfriend">Best Friend</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>`;
+let lightnav = `<nav
+        class="navbar navbar-expand-lg navbar-light"
+        style="background-color: #e3f2fd"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#aboutme">FjS.</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#aboutme">About me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#bestfriend">Best Friend</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>`;
+let change_theme = document.getElementById("changetheme");
+change_theme.addEventListener("click", function () {
+  if (body.classList.contains("dark")) {
+    body.classList.remove("dark");
+    navbar_dark.innerHTML = lightnav;
+  } else {
+    body.classList.add("dark");
+    navbar_dark.innerHTML = darknav;
+  }
+});
+///RANDOM PICTURES
 let random = [1, 2, 3, 4];
 
 //slice-one
@@ -25,7 +102,7 @@ setInterval(function () {
               alt=""
               class="image-fluid"
             />`;
-}, 6000);
+}, 4000);
 //slice-two
 let img_two = document.querySelector(".galery-1");
 setInterval(function () {
@@ -37,7 +114,7 @@ setInterval(function () {
               alt=""
               class="image-fluid"
           /></a>`;
-}, 6000);
+}, 4000);
 
 //slice-three
 let img_three = document.querySelector(".galery-2");
@@ -51,4 +128,4 @@ setInterval(function () {
               alt=""
               class="image-fluid"
           /></a>`;
-}, 6000);
+}, 4000);
