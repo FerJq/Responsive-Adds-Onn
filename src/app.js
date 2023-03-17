@@ -41,6 +41,9 @@ let darknav = `<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
               <li class="nav-item">
                 <a class="nav-link" href="#bestfriend">Best Friend</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#music">Music</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -74,6 +77,9 @@ let lightnav = `<nav
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#bestfriend">Best Friend</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#music">Music</a>
               </li>
             </ul>
           </div>

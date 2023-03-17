@@ -273,6 +273,10 @@ iframe {
   border-radius: 30px;
 }
 
+#contact {
+  background-color: #343a40;
+}
+
 .contact i:hover {
   transition: all 200ms ease-in-out;
   background-color: var(--primarycolor);
