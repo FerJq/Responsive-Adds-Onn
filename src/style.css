@@ -447,7 +447,4 @@ footer a:hover {
   .footer-container {
     grid-template-columns: 1fr;
   }
-  .contact {
-    display: flex;
-  }
 }
