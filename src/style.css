@@ -3,6 +3,10 @@
   --primaryshadow: 5px 5px 10px rgb(77, 77, 77);
 }
 
+body {
+  background: linear-gradient(-225deg, #5d9fff 0%, #b8dcff 48%, #6bbbff 100%);
+}
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
     url("../bg-img/bg.jpg");
@@ -39,6 +43,7 @@ hr {
 }
 
 img {
+  transition: all 200ms ease-in-out;
   max-width: 100%;
   height: auto;
   border-radius: 10px;
@@ -55,17 +60,27 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 2%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
 }
 
 main {
   padding: 2%;
-  background-color: var(--primarycolor);
+  background-color: aliceblue;
 }
 
 main button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 10px;
+  width: 200px;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  background-color: rgb(46, 133, 255);
+  color: white;
+  border: rgb(46, 133, 255);
+}
+
+button {
   display: block;
   margin: 0 auto;
   padding: 10px 10px;
@@ -123,38 +138,26 @@ section {
   padding: 0% 10%;
   display: grid;
   grid-template-columns: 400fr 1200fr 400fr;
-}
-
-.section-container-grid button {
-  display: block;
-  margin: 0 auto;
-  padding: 10px 10px;
-  width: 200px;
-  border-radius: 20px;
-  font-size: 20px;
-  font-weight: 400;
-  background-color: rgb(46, 133, 255);
-  color: white;
-  border: rgb(46, 133, 255);
+  grid-gap: 20px;
 }
 
 .section-1 {
-  padding: 10px;
   background-color: rgb(98, 112, 124);
   border-radius: 20px;
 }
-.section-2 {
-  padding: 10px;
-}
+
 .section-3 {
-  padding: 10px;
   background-color: rgb(98, 112, 124);
   border-radius: 20px;
 }
 
 .section-body-2 {
+  background-image: url("../bg-img/paws.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 1500px;
   padding: 2%;
-  border: 2px solid black;
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -162,6 +165,7 @@ section {
 
 .section-body-2 .embed-text {
   padding: 2%;
+  background-color: rgb(243, 243, 243);
   border-radius: 10px;
   text-align: center;
   color: black;
@@ -174,10 +178,31 @@ iframe {
 }
 /*Galery*/
 .galery {
-  background-color: grey;
-  padding: 10%;
+  padding: 4%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+  background-color: aliceblue;
   max-width: 100%;
 }
 
-.img {
+/*Contact */
+
+.contact {
+  color: blue;
+}
+
+/* Footer */
+.footer-container {
+  padding: 2%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+/*fast*/
+
+.img-fluid {
+  border-radius: 0;
+  transition: all 200ms ease-in-out;
+  max-width: 100%;
+  height: 0 auto;
 }
