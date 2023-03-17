@@ -401,6 +401,11 @@ footer a:hover {
   color: rgb(255, 237, 103);
 }
 
+.dark i:hover {
+  color: black;
+  background-color: rgb(255, 237, 103);
+}
+
 @media (max-width: 700px) {
   header h1 {
     font-weight: 700;
