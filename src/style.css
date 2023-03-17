@@ -434,7 +434,6 @@ footer a:hover {
 
   .text-grid {
     grid-template-columns: 1fr;
-  
   }
 
   .text-grid-section-2 {
@@ -444,6 +443,4 @@ footer a:hover {
   .footer-container {
     display: block;
   }
-
-  .
 }
