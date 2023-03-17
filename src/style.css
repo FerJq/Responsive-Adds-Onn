@@ -431,4 +431,19 @@ footer a:hover {
   .galery {
     display: none;
   }
+
+  .text-grid {
+    grid-template-columns: 1fr;
+  
+  }
+
+  .text-grid-section-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-container {
+    display: block;
+  }
+
+  .
 }
