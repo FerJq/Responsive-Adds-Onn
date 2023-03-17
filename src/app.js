@@ -9,8 +9,18 @@ function background_theme() {
     body.classList.add("color-theme");
   }
 }
-
 setInterval(background_theme, 2000);
+//bg darktheme
+
+function darkbg_theme() {
+  if (body.classList.contains("dark-theme")) {
+    body.classList.remove("dark-theme");
+  } else {
+    body.classList.add("dark-theme");
+  }
+}
+
+setInterval(darkbg_theme, 2000);
 
 //navbar dark theme
 let navbar_dark = document.querySelector(".navbar-container");
