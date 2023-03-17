@@ -8,7 +8,7 @@ setInterval(function () {
   img_one.innerHTML = `            <img
               src="image/slice-one/${[images]}.jpg"
               alt=""
-              class="img-fluid"
+              class="image-fluid"
             />`;
 }, 6000);
 //slice-two
@@ -20,7 +20,7 @@ setInterval(function () {
             ><img
               src="image/slice-two/${[images]}.jpg"
               alt=""
-              class="img-fluid"
+              class="image-fluid"
           /></a>`;
 }, 6000);
 
@@ -34,6 +34,6 @@ setInterval(function () {
             ><img
               src="image/slice-three/${[images]}.jpg"
               alt=""
-              class="img-fluid"
+              class="image-fluid"
           /></a>`;
 }, 6000);
