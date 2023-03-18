@@ -272,6 +272,7 @@ iframe {
   padding: 10px;
   margin: 10px 15px;
   border-radius: 30px;
+  box-shadow: var(--primaryshadow);
 }
 
 #contact {
@@ -282,6 +283,7 @@ iframe {
   transition: all 200ms ease-in-out;
   background-color: var(--primarycolor);
   color: white;
+  box-shadow: var(--primaryshadow);
 }
 footer hr {
   color: white;
