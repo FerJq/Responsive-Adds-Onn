@@ -1,11 +1,12 @@
 :root {
   --primarycolor: rgb(46, 133, 255);
   --secondcolor: rgb(255, 237, 103);
-  --primaryshadow: 5px 5px 10px rgb(30, 30, 30);
-  --darkshadow: 5px 5px 10px rgb(0, 0, 0);
+  --primaryshadow: 5px 5px 10px rgb(188, 188, 188);
+  --darkshadow: 5px 5px 10px rgb(40, 40, 40);
 }
 
 body {
+  transition: all 200ms ease-in-out;
   background: linear-gradient(-225deg, #5d9fff 0%, #b8dcff 48%, #6bbbff 100%);
   background-position: left;
   background-size: 250%;
@@ -13,7 +14,8 @@ body {
 }
 
 .theme-button {
-  background-color: #21211e;
+  padding: 1.5%;
+  background-color: aliceblue;
 }
 
 .theme-button {
@@ -334,6 +336,7 @@ footer a:hover {
 }
 
 .dark {
+  transition: all 200ms ease-in-out;
   background: linear-gradient(
     114.3deg,
     rgb(53, 70, 58) 0.2%,
@@ -364,6 +367,7 @@ footer a:hover {
   background-color: rgb(104, 214, 104);
   border: rgb(104, 214, 104);
   color: black;
+  box-shadow: var(--darkshadow);
 }
 
 .dark .container button:hover {
@@ -418,20 +422,8 @@ footer a:hover {
   background-color: rgb(255, 237, 103);
 }
 
-.dark li button {
-  margin: 7px;
-  border-radius: 20px;
-  font-size: 15px;
-  font-weight: 400;
-  background-color: rgb(104, 214, 104);
-  color: black;
-  border: rgb(104, 214, 104);
-  transition: transform 0.3s, background-color 0.3s, color 0.3s;
-}
-
-.dark li button:hover {
-  background-color: rgb(255, 237, 103);
-  color: black;
+.dark .theme-button {
+  background-color: #38393e;
 }
 
 @media (max-width: 700px) {
