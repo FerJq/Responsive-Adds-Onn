@@ -5,27 +5,19 @@
   --darkshadow: 5px 5px 10px rgb(0, 0, 0);
 }
 
-li button {
-  margin: 7px;
-  border-radius: 20px;
-  font-size: 15px;
-  font-weight: 400;
-  background-color: rgb(46, 133, 255);
-  color: white;
-  border: rgb(46, 133, 255);
-  transition: transform 0.3s, background-color 0.3s, color 0.3s;
-}
-
-li button:hover {
-  background-color: rgb(255, 237, 103);
-  color: black;
-}
-
 body {
   background: linear-gradient(-225deg, #5d9fff 0%, #b8dcff 48%, #6bbbff 100%);
   background-position: left;
   background-size: 250%;
   transition: background-position 1s;
+}
+
+.theme-button {
+  background-color: #21211e;
+}
+
+.theme-button {
+  font-size: 18px;
 }
 
 header {
