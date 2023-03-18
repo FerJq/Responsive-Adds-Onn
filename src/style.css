@@ -1,7 +1,7 @@
 :root {
   --primarycolor: rgb(46, 133, 255);
   --secondcolor: rgb(255, 237, 103);
-  --primaryshadow: 5px 5px 10px rgb(188, 188, 188);
+  --primaryshadow: 5px 5px 10px rgb(117, 117, 117);
   --darkshadow: 5px 5px 10px rgb(40, 40, 40);
 }
 
@@ -18,8 +18,10 @@ body {
   background-color: aliceblue;
 }
 
-.theme-button {
+.theme-button button {
   font-size: 18px;
+  background-color: antiquewhite;
+  color: black;
 }
 
 header {
